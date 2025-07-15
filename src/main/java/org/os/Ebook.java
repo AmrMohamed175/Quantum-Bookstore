@@ -13,5 +13,4 @@ public class Ebook extends Book {
     public String getFileType() {
         return fileType;
     }
-
 }

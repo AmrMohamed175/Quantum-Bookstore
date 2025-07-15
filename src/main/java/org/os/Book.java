@@ -17,7 +17,6 @@ public abstract class Book {
         this.quantity = quantity;
         this.author = author;
     }
-
     public String getISBN() {
         return ISBN;
     }

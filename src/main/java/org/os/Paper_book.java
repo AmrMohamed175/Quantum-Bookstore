@@ -8,7 +8,6 @@ public class Paper_book extends Book{
         this.Stock = stock;
     }
 
-
     public int getStock() {
         return Stock;
     }

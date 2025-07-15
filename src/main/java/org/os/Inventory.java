@@ -11,5 +11,4 @@ public class Inventory {
         System.out.println("Book Added successfully with title: " + book.getTitle());
     }
 
-
 }
