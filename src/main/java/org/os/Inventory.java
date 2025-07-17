@@ -16,7 +16,7 @@ public class Inventory {
             }
         }
         inventory.add(book);
-        System.out.println("Book Added successfully with title : "  + book.getTitle());
+        System.out.println("Quantum book store: Book Added successfully with title : "  + book.getTitle());
     }
 
 
@@ -44,7 +44,7 @@ public class Inventory {
                     throw new RuntimeException("Quantum book store: " + b.getTitle() + " Book is not for sale.");
                 }
                 double paid = b.buy(quantity, email, address);
-                System.out.println("Quantum book store: Book with title : " + b.getTitle() + "Paid for : " + paid);
+                System.out.println("Quantum book store: Book with title : " + b.getTitle() + " , Paid for : " + paid);
                 return paid;
             }
         }
