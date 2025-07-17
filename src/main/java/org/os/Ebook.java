@@ -10,6 +10,22 @@ public class Ebook extends Book {
         this.fileType = fileType;
     }
 
+    @Override
+    public boolean isAvailableForSale() {
+        return true;
+    }
+
+    @Override
+    public double buy(int quantity, String email, String address) {
+        if (quantity != 1) {
+            throw new RuntimeException(
+                    "Quantum book store: Only one eBook can be bought at a time.");
+        }
+        MailService.send(email, getTitle(), fileType);
+        return getPrice();
+    }
+
+
     public String getFileType() {
         return fileType;
     }

@@ -17,6 +17,13 @@ public abstract class Book {
         this.quantity = quantity;
         this.author = author;
     }
+
+    public abstract boolean isAvailableForSale();
+
+    public abstract double  buy(int quantity, String email, String address);
+
+
+
     public String getISBN() {
         return ISBN;
     }
@@ -36,6 +43,7 @@ public abstract class Book {
     public int getQuantity() {
         return quantity;
     }
+
     public String getAuthor() {
         return author;
     }
